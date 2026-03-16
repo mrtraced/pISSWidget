@@ -1,0 +1,72 @@
+pISS Widget - How to Install
+=============================
+
+A macOS desktop widget that shows you how full the International Space
+Station's urine tank is. In real time. From NASA telemetry. Yes really.
+
+This app isn't notarized (I don't pay Apple $99/year for the privilege),
+so macOS will try to block it. Here's how to get around that.
+
+
+STEP 1: Clear quarantine on the DMG
+------------------------------------
+Open Terminal (press Cmd+Space, type "Terminal") and paste this:
+
+    xattr -cr ~/Downloads/pISSWidget.dmg
+
+Change the path if your DMG isn't in Downloads.
+If the DMG is already open, eject it first, then re-open it.
+
+
+STEP 2: Drag the app to Applications
+-------------------------------------
+Open the DMG and drag pISSWidget.app into the Applications folder.
+
+
+STEP 3: Clear quarantine on the installed app
+---------------------------------------------
+Back in Terminal, paste:
+
+    xattr -cr /Applications/pISSWidget.app
+
+
+STEP 4: Open the app
+---------------------
+Open pISSWidget.app from /Applications.
+
+If macOS still complains, go to:
+    System Settings > Privacy & Security
+Scroll down and click "Open Anyway".
+
+
+STEP 5: Add the widget
+-----------------------
+1. Right-click your desktop > Edit Widgets > search "pISS"
+2. Drag it onto your desktop
+3. Contemplate space pee
+
+If the widget doesn't appear, try logging out and back in.
+
+The widget refreshes every ~15 minutes. A green dot means the ISS has
+signal (AOS); orange means loss of signal (LOS).
+
+
+EXTRA NERDY INFORMATION
+-----------------------
+
+It may come as a surprise that the current fill level of the urine tanks on the International Space Station is public, but NASA is a public agency! This data belongs to the people of the United States (and by extension, the world). pISS Widget takes this vital information about our longest-running and most incredible human space experiment and puts it on your desktop. This macOS desktop widget will shows you exactly how full the International Space Station's urine tank is. In real time. From NASA telemetry. If you wanted to know how often astronauts go pee -- this is the weird widget for you.
+
+The ISS has a urine processing assembly on Node 3 that recycles astronaut pee into drinking water (they recover about 98% of it). NASA streams telemetry data from the station publicly via Lightstreamer, including the tank fill level. This widget polls that data and puts it on your desktop as a little glass tank that fills up with yellow.
+
+
+WHY I DID THIS
+---------------
+I made this after researching the ISS waste management system for an episode of my podcast That's Absurd Please Elaborate where our guest, Belgian comedian Lieven Scheire talked all about it. The generic link to that episode is here: https://pod.link/1680094699/episode/Z2lkOi8vYXJ0MTktZXBpc29kZS1sb2NhdG9yL1YwL3Zqai1uUi1FX2RLcW0zYktjOGIzQktjS3ZBbjFFV1ZPNExRZGlDOWZBVFE
+
+If you want to find me and talk about this silly project I'm most active on Threads and Instagram @tracedominguez for both.
+
+I have to pay homage to the amazing API work done by Github contributors @Jaennaet: initial idea and first version and @durul: code quality, LOS handling, iOS, watchOS & visionOS versions. I started with their project and with the help of ClaudeCode was able to put together this ridiculous thing.
+
+Find the original menubar git here: https://github.com/Jaennaet/pISSStream
+
+

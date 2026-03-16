@@ -1,0 +1,26 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserdata
+*.xcworkspace
+xcuserdata/
+*.xcscmblueprint
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Build artifacts
+*.dmg
+*.app
+rw.*.dmg
+
+# Background images (large, not needed for source)
+background.jpeg
+background.png
+
+# Misc
+*.swp
+*~

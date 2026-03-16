@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16DD3225F9A372E310BE3463 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65848A246EC6236557382E /* Color+Ext.swift */; };
+		1F93A77EB8DCADE98E6777AA /* PissTankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623A0B0657DE61DF69D7BA /* PissTankView.swift */; };
+		2D81F5914F05DD445136C881 /* WidgetFamily+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7308A78056C33789B9561616 /* WidgetFamily+Ext.swift */; };
+		2E77ED006B50CDAF71FC7F2D /* PissWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB45B317A2DEE09B83A5B77 /* PissWidgetView.swift */; };
+		35A7D79713BE7B5B308711C1 /* PissTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C69BA86C125274D7730373 /* PissTimelineProvider.swift */; };
+		44BF91603EFBBE2B12FCEA15 /* LightstreamerFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF8CC164B8CB36943D66C9 /* LightstreamerFetcher.swift */; };
+		601DC07B615898234B9EC39B /* LightstreamerFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF8CC164B8CB36943D66C9 /* LightstreamerFetcher.swift */; };
+		6325F19DAF05CF09220B06C2 /* pISSWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F69CAD982F160FFD934115 /* pISSWidgetBundle.swift */; };
+		79FA6216773D02BB5E477AAE /* pISSWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C694C840C1EE7A16E1661FD /* pISSWidget.swift */; };
+		AA19B41549C38EB63C32624B /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B8466B911E8A290895EDD /* AppIntent.swift */; };
+		B0C8116047083107BC9A7D69 /* pISSWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFFDD4DF3FB652E57CBEEB /* pISSWidgetApp.swift */; };
+		BBAB6E527B69FE2F12B612C5 /* GeometryProxy+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11740ED4DF6E4A90E57FE3B /* GeometryProxy+Ext.swift */; };
+		E41FCD685848E5AB2F71C0D1 /* pISSWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F19A11775741E42776D87502 /* pISSWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3BAED7AE16895FE79EC744B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0EE5A6283AD07EB281CD4 /* ContentView.swift */; };
+		AABB0011DEADBEEF00000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AABB0011DEADBEEF00000002 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F49B6FFE8261DC77F2EC3A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71387BD19C6B32D3623E875A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F5055CB1EE92C28F50DDA3B;
+			remoteInfo = pISSWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A37D4F47BD95766C66D54E3E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E41FCD685848E5AB2F71C0D1 /* pISSWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00C69BA86C125274D7730373 /* PissTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PissTimelineProvider.swift; sourceTree = "<group>"; };
+		0334DE3E08EE78DC78B2232C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0A65848A246EC6236557382E /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		1A7B8466B911E8A290895EDD /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		2BF3B6AC2EE7E1A1814F469F /* pISSWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pISSWidgetExtension.entitlements; sourceTree = "<group>"; };
+		4BD0EE5A6283AD07EB281CD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5C694C840C1EE7A16E1661FD /* pISSWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pISSWidget.swift; sourceTree = "<group>"; };
+		697830DC3FEAADB73776E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		70F69CAD982F160FFD934115 /* pISSWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pISSWidgetBundle.swift; sourceTree = "<group>"; };
+		7308A78056C33789B9561616 /* WidgetFamily+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WidgetFamily+Ext.swift"; sourceTree = "<group>"; };
+		A11740ED4DF6E4A90E57FE3B /* GeometryProxy+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeometryProxy+Ext.swift"; sourceTree = "<group>"; };
+		B699B268CE2D32D82D43DCF5 /* pISSWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pISSWidget.entitlements; sourceTree = "<group>"; };
+		CFB45B317A2DEE09B83A5B77 /* PissWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PissWidgetView.swift; sourceTree = "<group>"; };
+		D0623A0B0657DE61DF69D7BA /* PissTankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PissTankView.swift; sourceTree = "<group>"; };
+		DCBFFDD4DF3FB652E57CBEEB /* pISSWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pISSWidgetApp.swift; sourceTree = "<group>"; };
+		E1DAE15FAD9A69B17B4E1E38 /* pISSWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pISSWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BF8CC164B8CB36943D66C9 /* LightstreamerFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightstreamerFetcher.swift; sourceTree = "<group>"; };
+		F19A11775741E42776D87502 /* pISSWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = pISSWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+		AABB0011DEADBEEF00000002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+
+/* Begin PBXGroup section */
+		016AB1AF905F7A81FD9174A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A65848A246EC6236557382E /* Color+Ext.swift */,
+				A11740ED4DF6E4A90E57FE3B /* GeometryProxy+Ext.swift */,
+				7308A78056C33789B9561616 /* WidgetFamily+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0539F8BBF0797F55A4C4598E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1DAE15FAD9A69B17B4E1E38 /* pISSWidget.app */,
+				F19A11775741E42776D87502 /* pISSWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		057A99F67BB30EBFDA880FAC /* pISSWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4BD0EE5A6283AD07EB281CD4 /* ContentView.swift */,
+				697830DC3FEAADB73776E286 /* Info.plist */,
+				B699B268CE2D32D82D43DCF5 /* pISSWidget.entitlements */,
+				DCBFFDD4DF3FB652E57CBEEB /* pISSWidgetApp.swift */,
+			);
+			path = pISSWidget;
+			sourceTree = "<group>";
+		};
+		41360927BA627F3DF9FD707F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E2BF8CC164B8CB36943D66C9 /* LightstreamerFetcher.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		50B124015C5725E2B6DAF756 = {
+			isa = PBXGroup;
+			children = (
+				AABB0011DEADBEEF00000002 /* Assets.xcassets */,
+				057A99F67BB30EBFDA880FAC /* pISSWidget */,
+				B0FDB7762A431CFF7B984902 /* pISSWidgetExtension */,
+				41360927BA627F3DF9FD707F /* Shared */,
+				0539F8BBF0797F55A4C4598E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0FDB7762A431CFF7B984902 /* pISSWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1A7B8466B911E8A290895EDD /* AppIntent.swift */,
+				0334DE3E08EE78DC78B2232C /* Info.plist */,
+				00C69BA86C125274D7730373 /* PissTimelineProvider.swift */,
+				5C694C840C1EE7A16E1661FD /* pISSWidget.swift */,
+				70F69CAD982F160FFD934115 /* pISSWidgetBundle.swift */,
+				2BF3B6AC2EE7E1A1814F469F /* pISSWidgetExtension.entitlements */,
+				016AB1AF905F7A81FD9174A9 /* Extensions */,
+				C6F3CB7A700C7314825E9748 /* Views */,
+			);
+			path = pISSWidgetExtension;
+			sourceTree = "<group>";
+		};
+		C6F3CB7A700C7314825E9748 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0623A0B0657DE61DF69D7BA /* PissTankView.swift */,
+				CFB45B317A2DEE09B83A5B77 /* PissWidgetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F5055CB1EE92C28F50DDA3B /* pISSWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43754CEBB6E19A4307D9FB61 /* Build configuration list for PBXNativeTarget "pISSWidgetExtension" */;
+			buildPhases = (
+				F1FFFFF38A0654C535FACC20 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pISSWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = pISSWidgetExtension;
+			productReference = F19A11775741E42776D87502 /* pISSWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4880C7DB7AF02493143A4A45 /* pISSWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA679483B2365142DB74D96A /* Build configuration list for PBXNativeTarget "pISSWidget" */;
+			buildPhases = (
+				DA3BFCF4D457FC2D45935B09 /* Sources */,
+				AABB0011DEADBEEF00000003 /* Resources */,
+				A37D4F47BD95766C66D54E3E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB532CFE4C7A5CC25282546F /* PBXTargetDependency */,
+			);
+			name = pISSWidget;
+			packageProductDependencies = (
+			);
+			productName = pISSWidget;
+			productReference = E1DAE15FAD9A69B17B4E1E38 /* pISSWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AABB0011DEADBEEF00000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABB0011DEADBEEF00000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXProject section */
+		71387BD19C6B32D3623E875A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = 47F95F5B2F2586B1A2ADB759 /* Build configuration list for PBXProject "pISSWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 50B124015C5725E2B6DAF756;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4880C7DB7AF02493143A4A45 /* pISSWidget */,
+				0F5055CB1EE92C28F50DDA3B /* pISSWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA3BFCF4D457FC2D45935B09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BAED7AE16895FE79EC744B /* ContentView.swift in Sources */,
+				44BF91603EFBBE2B12FCEA15 /* LightstreamerFetcher.swift in Sources */,
+				B0C8116047083107BC9A7D69 /* pISSWidgetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FFFFF38A0654C535FACC20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA19B41549C38EB63C32624B /* AppIntent.swift in Sources */,
+				16DD3225F9A372E310BE3463 /* Color+Ext.swift in Sources */,
+				BBAB6E527B69FE2F12B612C5 /* GeometryProxy+Ext.swift in Sources */,
+				601DC07B615898234B9EC39B /* LightstreamerFetcher.swift in Sources */,
+				1F93A77EB8DCADE98E6777AA /* PissTankView.swift in Sources */,
+				35A7D79713BE7B5B308711C1 /* PissTimelineProvider.swift in Sources */,
+				2E77ED006B50CDAF71FC7F2D /* PissWidgetView.swift in Sources */,
+				2D81F5914F05DD445136C881 /* WidgetFamily+Ext.swift in Sources */,
+				79FA6216773D02BB5E477AAE /* pISSWidget.swift in Sources */,
+				6325F19DAF05CF09220B06C2 /* pISSWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB532CFE4C7A5CC25282546F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F5055CB1EE92C28F50DDA3B /* pISSWidgetExtension */;
+			targetProxy = 3F49B6FFE8261DC77F2EC3A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D6B67F20A95A1191B71F28D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		2838862F10AE913C51F4B189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = pISSWidget/pISSWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = GWTLQ69ZJD;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				INFOPLIST_FILE = pISSWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pisswidget.app;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		406567346D65ACD1E1D65AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = pISSWidgetExtension/pISSWidgetExtension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = GWTLQ69ZJD;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				INFOPLIST_FILE = pISSWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pisswidget.app.widget;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		59173D49A0379F001BFEC92A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		6EBDD5090B2FB77C7E80A3D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = pISSWidgetExtension/pISSWidgetExtension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = GWTLQ69ZJD;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				INFOPLIST_FILE = pISSWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pisswidget.app.widget;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DF723C04922AFB9339D87348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = pISSWidget/pISSWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = GWTLQ69ZJD;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				INFOPLIST_FILE = pISSWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pisswidget.app;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43754CEBB6E19A4307D9FB61 /* Build configuration list for PBXNativeTarget "pISSWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406567346D65ACD1E1D65AA2 /* Debug */,
+				6EBDD5090B2FB77C7E80A3D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		47F95F5B2F2586B1A2ADB759 /* Build configuration list for PBXProject "pISSWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6B67F20A95A1191B71F28D /* Debug */,
+				59173D49A0379F001BFEC92A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FA679483B2365142DB74D96A /* Build configuration list for PBXNativeTarget "pISSWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2838862F10AE913C51F4B189 /* Debug */,
+				DF723C04922AFB9339D87348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71387BD19C6B32D3623E875A /* Project object */;
+}
