@@ -10,9 +10,6 @@ struct PissTankView: View {
     let pissData: LightstreamerFetcher.PissData
     let date: Date
 
-    /// Widget corner radius on macOS (matches system)
-    private let cornerRadius: CGFloat = 22
-
     private var percentage: Double {
         min(max((Double(pissData.pissValue) ?? 0.0) / 100.0, 0.0), 1.0)
     }
@@ -64,8 +61,10 @@ struct PissTankView: View {
                     }
                     .frame(height: fillHeight)
                 }
-                // Clip liquid to rounded rect so it doesn't bleed past corners
-                .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+                // Clip liquid to the widget's own shape so it doesn't bleed past corners.
+                // ContainerRelativeShape tracks the system corner radius, which
+                // differs between macOS releases (≈28pt on macOS 27).
+                .clipShape(ContainerRelativeShape())
 
                 // ── PERCENTAGE TEXT (etched glass look) ────────
                 // Dark inset shadow layer
@@ -119,7 +118,7 @@ struct PissTankView: View {
 
                 // ── GLASS RIM (on top of everything) ───────────
                 // Outer highlight — top-left light catch
-                RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                ContainerRelativeShape()
                     .strokeBorder(
                         LinearGradient(
                             stops: [
@@ -135,7 +134,7 @@ struct PissTankView: View {
                     )
 
                 // Inner rim — slight inset glow
-                RoundedRectangle(cornerRadius: cornerRadius - 2, style: .continuous)
+                ContainerRelativeShape()
                     .strokeBorder(
                         LinearGradient(
                             stops: [

@@ -203,7 +203,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 2630;
+				LastUpgradeCheck = 2700;
 			};
 			buildConfigurationList = 47F95F5B2F2586B1A2ADB759 /* Build configuration list for PBXProject "pISSWidget" */;
 			compatibilityVersion = "Xcode 14.0";

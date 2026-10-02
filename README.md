@@ -65,8 +65,8 @@ WidgetKit can't hold persistent connections, so instead of WebSockets this uses 
 
 If you want to build it yourself:
 
-- macOS 26+ (Tahoe)
-- Xcode 26+
+- macOS 26+ (Tahoe) — also builds and runs on macOS 27
+- Xcode 26+ (tested with Xcode 27)
 
 ```bash
 git clone https://github.com/mrtraced/pISSWidget.git
